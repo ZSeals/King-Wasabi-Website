@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-color: #125b84;
+    background-color: #0b3d5c;
     color: white;
     padding: 18px 0;
 }
@@ -53,6 +53,11 @@ header {
     text-decoration: underline;
 }
 
+.nav-links a:focus {
+    outline: 3px solid white;
+    outline-offset: 3px;
+}
+
 .banner {
     background-color: #dceef8;
     text-align: center;
@@ -60,7 +65,7 @@ header {
 }
 
 .banner h1 {
-    color: #125b84;
+    color: #0b3d5c;
     margin-bottom: 10px;
 }
 
@@ -77,7 +82,7 @@ main {
 }
 
 .section-box h2 {
-    color: #125b84;
+    color: #0b3d5c;
     margin-bottom: 10px;
 }
 
@@ -88,12 +93,12 @@ form button {
     padding: 10px;
     margin-top: 6px;
     margin-bottom: 14px;
-    border: 1px solid #b9c6cf;
+    border: 1px solid #6b7c87;
     border-radius: 6px;
 }
 
 form button {
-    background-color: #3282b8;
+    background-color: #0b3d5c;
     color: white;
     border: none;
     cursor: pointer;
@@ -101,11 +106,18 @@ form button {
 }
 
 form button:hover {
-    background-color: #26678f;
+    background-color: #062b40;
+}
+
+form button:focus,
+form input:focus,
+form textarea:focus {
+    outline: 3px solid #111111;
+    outline-offset: 3px;
 }
 
 footer {
-    background-color: #125b84;
+    background-color: #0b3d5c;
     color: white;
     text-align: center;
     padding: 16px 10px;
@@ -113,7 +125,7 @@ footer {
 }
 
 .hero {
-    background-image: linear-gradient(rgba(18, 91, 132, 0.6), rgba(18, 91, 132, 0.6)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)),
         url("../images/tanya-barrow.jpg");
     background-size: cover;
     background-position: center;
@@ -125,26 +137,35 @@ footer {
 .hero h1 {
     font-size: 42px;
     margin-bottom: 15px;
+    color: white;
 }
 
 .hero p {
     max-width: 750px;
     margin: 0 auto 20px;
     font-size: 18px;
+    color: white;
 }
 
 .hero-button {
     display: inline-block;
-    background-color: #3282b8;
-    color: white;
+    background-color: #ffffff;
+    color: #0b3d5c;
     text-decoration: none;
     padding: 12px 22px;
     border-radius: 6px;
     font-weight: bold;
+    border: 2px solid #ffffff;
 }
 
 .hero-button:hover {
-    background-color: #26678f;
+    background-color: #dceef8;
+    color: #062b40;
+}
+
+.hero-button:focus {
+    outline: 3px solid white;
+    outline-offset: 4px;
 }
 
 .card-grid {
@@ -171,7 +192,7 @@ footer {
 }
 
 .card-content h3 {
-    color: #125b84;
+    color: #0b3d5c;
     margin-bottom: 10px;
 }
 
@@ -180,13 +201,18 @@ footer {
 }
 
 .card-content a {
-    color: #3282b8;
-    text-decoration: none;
+    color: #0b3d5c;
+    text-decoration: underline;
     font-weight: bold;
 }
 
 .card-content a:hover {
-    text-decoration: underline;
+    color: #062b40;
+}
+
+.card-content a:focus {
+    outline: 3px solid #111111;
+    outline-offset: 3px;
 }
 
 .info-list {
